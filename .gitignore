@@ -28,3 +28,4 @@ google_ai_ex-*.tar
 # IDE related files
 google-ai-ex.iml
 .idea
+/config/dev.exs

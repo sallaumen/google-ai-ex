@@ -20,11 +20,14 @@ defmodule GoogleAiEx.MixProject do
 
   defp deps do
     [
+      {:req, "~> 0.4.11"},
+      {:jason, "~> 1.4.1"},
+
       # Code quality
       {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0", only: :dev, runtime: false},
       {:sobelow, "~> 0.11.1", only: :dev},
-      {:excoveralls, "~> 0.15.0", only: :test},
+      {:excoveralls, "~> 0.15.0", only: :test}
     ]
   end
 
