@@ -2,6 +2,19 @@
 
 Elixir study integration to Google's Vertex AI, and maybe other APIs on the future
 
+## Usage example with mix
+
+```elixir
+iex -S mix
+
+iex(1)> VertexAI.request "Im using you to test your API, how do you feel about it?"
+%{
+  input_tokens: 15,
+  output_tokens: 68,
+  prediction: " Pleased to be of assistance."
+}
+```
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
