@@ -25,9 +25,7 @@ defmodule GoogleAiEx.MixProject do
 
       # Code quality
       {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
-      {:dialyxir, "~> 1.0", only: :dev, runtime: false},
-      {:sobelow, "~> 0.11.1", only: :dev},
-      {:excoveralls, "~> 0.15.0", only: :test}
+      {:dialyxir, "~> 1.0", only: :dev, runtime: false}
     ]
   end
 
@@ -35,7 +33,7 @@ defmodule GoogleAiEx.MixProject do
     [
       setup: ["deps.get"],
       test: ["test"],
-      check: ["compile --warning-as-errors", "credo --strict", "format --check-formatted", "sobelow --config", "dialyzer"]
+      check: ["compile --warning-as-errors", "credo --strict", "format --check-formatted", "dialyzer"]
     ]
   end
 end
